@@ -6,7 +6,7 @@ import { AddressBookEntry } from '../components/AppState';
 // Utility class to save / read the address book.
 export default class AddressbookImpl {
   static async getFileName() {
-    const dir = path.join(remote.app.getPath('appData'), 'zecwallet');
+    const dir = path.join(remote.app.getPath('appData'), 'zercwallet');
     if (!fs.existsSync(dir)) {
       await fs.promises.mkdir(dir);
     }

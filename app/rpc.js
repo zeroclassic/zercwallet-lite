@@ -151,7 +151,7 @@ export default class RPC {
       info.connections = 1;
       info.version = `${infoJSON.vendor}/${infoJSON.git_commit.substring(0, 6)}/${infoJSON.version}`;
       info.verificationProgress = 1;
-      info.currencyName = info.testnet ? 'TAZ' : 'ZEC';
+      info.currencyName = info.testnet ? 'TAZ' : 'ZERC';
       info.solps = 0;
 
       const encStatus = native.litelib_execute('encryptionstatus', '');
@@ -500,7 +500,7 @@ export default class RPC {
 
     try {
       const response = await new Promise((resolve, reject) => {
-        axios('https://api.coincap.io/v2/rates/zcash', {
+        axios('https://api.coingecko.com/api/v3/simple/price?ids=zeroclassic&vs_currencies=USD', {
           method: 'GET'
         })
           .then(r => resolve(r.data))
@@ -509,9 +509,9 @@ export default class RPC {
           });
       });
 
-      const zecData = response.data;
+      const zecData = response.zeroclassic;
       if (zecData) {
-        this.fnSetZecPrice(zecData.rateUsd);
+        this.fnSetZecPrice(zecData.usd);
         this.setupNextZecPriceRefresh(0, 1000 * 60 * 60); // Every hour
       } else {
         this.fnSetZecPrice(null);

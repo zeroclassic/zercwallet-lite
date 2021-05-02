@@ -66,7 +66,7 @@ export default class WormholeConnection extends PureComponent<Props, State> {
         <div className={[cstyles.xlarge, cstyles.padall, cstyles.center].join(' ')}>Connect Mobile App</div>
 
         <div className={styles.qrcodecontainer}>
-          <div>This is your connection code. Scan this QR code from the Zecwallet Companion App.</div>
+          <div>This is your connection code. Scan this QR code from the Zercwallet Companion App.</div>
 
           <div className={[cstyles.center, cstyles.margintoplarge].join(' ')}>
             <QRCode value={connStr} size={256} level="M" className={styles.wormholeqr} />

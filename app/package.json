@@ -1,8 +1,8 @@
 {
-  "name": "zecwallet-lite",
-  "productName": "Zecwallet Lite",
+  "name": "zercwallet-lite",
+  "productName": "Zercwallet Lite",
   "version": "1.6.0",
-  "description": "Zecwallet Lite",
+  "description": "Zercwallet Lite",
   "main": "./main.prod.js",
   "author": {
     "name": "Aditya Kulkarni",

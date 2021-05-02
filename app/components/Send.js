@@ -535,7 +535,7 @@ export default class Send extends PureComponent<Props, SendState> {
     // If there are unverified funds, then show a tooltip
     let tooltip: string = '';
     if (totalBalance.unverifiedPrivate) {
-      tooltip = `Waiting for confirmation of ZEC ${totalBalance.unverifiedPrivate} with 5 blocks (approx 6 minutes)`;
+      tooltip = `Waiting for confirmation of ZERC ${totalBalance.unverifiedPrivate} with 5 blocks (approx 10 minutes)`;
     }
 
     return (

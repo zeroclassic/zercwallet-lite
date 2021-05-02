@@ -29,14 +29,12 @@ export default function ServerSelectModal({ modalIsOpen, closeModal, openErrorMo
     closeModal();
 
     setTimeout(() => {
-      openErrorModal('Restart Zecwallet Lite', 'Please restart Zecwallet Lite to connect to the new server');
+      openErrorModal('Restart Zercwallet Lite', 'Please restart Zercwallet Lite to connect to the new server');
     }, 10);
   };
 
   const servers = [
-    { name: 'Zecwallet (Default)', uri: Utils.V3_LIGHTWALLETD },
-    { name: 'Zecwallet (Backup)', uri: Utils.V2_LIGHTWALLETD },
-    { name: 'ZcashFR (Community)', uri: 'https://lightd-main.zcashfr.io:443' }
+    { name: 'Zercwallet (Default)', uri: Utils.V3_LIGHTWALLETD }
   ];
 
   return (

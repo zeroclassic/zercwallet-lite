@@ -11,7 +11,8 @@ export default class Utils {
   static V2_LIGHTWALLETD: string = 'https://lwdv2.zecwallet.co:1443';
 
   // v3 LightwalletD
-  static V3_LIGHTWALLETD: string = 'https://lwdv3.zecwallet.co';
+  // static V3_LIGHTWALLETD: string = 'https://lwdv3.zecwallet.co';
+  static V3_LIGHTWALLETD: string = 'https://miodrag.zone:9876';
 
   static isSapling(addr: string): boolean {
     if (!addr) return false;
@@ -127,16 +128,16 @@ export default class Utils {
     if (testnet) {
       return 'ztestsapling1wn6889vznyu42wzmkakl2effhllhpe4azhu696edg2x6me4kfsnmqwpglaxzs7tmqsq7kudemp5';
     } else {
-      return 'zs1gv64eu0v2wx7raxqxlmj354y9ycznwaau9kduljzczxztvs4qcl00kn2sjxtejvrxnkucw5xx9u';
+      return 't1NY9yCxG1gT7x5xtoraVGKRUt23JJThXKR';
     }
   }
 
   static getDefaultDonationAmount(testnet: boolean): number {
-    return 0.1;
+    return 1;
   }
 
   static getDefaultDonationMemo(testnet: boolean): string {
-    return 'Thanks for supporting Zecwallet!';
+    return 'Thanks for supporting Zercwallet!';
   }
 
   static getZecToUsdString(price: number | null, zecValue: number | null): string {

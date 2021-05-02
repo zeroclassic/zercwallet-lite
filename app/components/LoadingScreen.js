@@ -17,7 +17,7 @@ import { RPCConfig, Info } from './AppState';
 import RPC from '../rpc';
 import cstyles from './Common.module.css';
 import styles from './LoadingScreen.module.css';
-import Logo from '../assets/img/logobig.png';
+import Logo from '../assets/img/zerc-logo-trans-purp.png';
 import Utils from '../utils/utils';
 
 const locateZcashParamsDir = () => {

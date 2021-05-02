@@ -58,10 +58,10 @@ export default class MenuBuilder {
     const { mainWindow } = this;
 
     const subMenuAbout = {
-      label: 'Zecwallet Lite',
+      label: 'Zercwallet Lite',
       submenu: [
         {
-          label: 'About Zecwallet Lite',
+          label: 'About Zecrwallet Lite',
           selector: 'orderFrontStandardAboutPanel:',
           click: () => {
             mainWindow.webContents.send('about');
@@ -71,7 +71,7 @@ export default class MenuBuilder {
         { label: 'Services', submenu: [] },
         { type: 'separator' },
         {
-          label: 'Hide Zecwallet Lite',
+          label: 'Hide Zecrwallet Lite',
           accelerator: 'Command+H',
           selector: 'hide:'
         },
@@ -405,7 +405,7 @@ export default class MenuBuilder {
         label: 'Help',
         submenu: [
           {
-            label: 'About Zecwallet Lite',
+            label: 'About Zercwallet Lite',
             click: () => {
               mainWindow.webContents.send('about');
             }

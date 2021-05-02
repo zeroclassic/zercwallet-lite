@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import styles from './Sidebar.module.css';
 import cstyles from './Common.module.css';
 import routes from '../constants/routes.json';
-import Logo from '../assets/img/logobig.png';
+import Logo from '../assets/img/zerc-logo-trans-purp.png';
 import { Info, Transaction } from './AppState';
 import Utils from '../utils/utils';
 import RPC from '../rpc';
@@ -259,12 +259,12 @@ class Sidebar extends PureComponent<Props, State> {
     // About
     ipcRenderer.on('about', () => {
       openErrorModal(
-        'Zecwallet Lite',
+        'Zercwallet Lite',
         <div className={cstyles.verticalflex}>
-          <div className={cstyles.margintoplarge}>Zecwallet Lite v1.6.0</div>
+          <div className={cstyles.margintoplarge}>Zercwallet Lite v1.6.0</div>
           <div className={cstyles.margintoplarge}>Built with Electron. Copyright (c) 2018-2021, Aditya Kulkarni.</div>
           <div className={cstyles.margintoplarge}>
-            The MIT License (MIT) Copyright (c) 2018-2021 Zecwallet
+            The MIT License (MIT) Copyright (c) 2018-2021 Zercwallet
             <br />
             <br />
             Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -338,7 +338,7 @@ class Sidebar extends PureComponent<Props, State> {
     ipcRenderer.on('exportalltx', async () => {
       const save = await remote.dialog.showSaveDialog({
         title: 'Save Transactions As CSV',
-        defaultPath: 'zecwallet_transactions.csv',
+        defaultPath: 'zercwallet_transactions.csv',
         filters: [{ name: 'CSV File', extensions: ['csv'] }],
         properties: ['showOverwriteConfirmation']
       });
