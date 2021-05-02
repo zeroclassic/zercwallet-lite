@@ -51,7 +51,7 @@ const TxModalInternal = ({ modalIsOpen, tx, closeModal, currencyName, zecPrice, 
     if (currencyName === 'TAZ') {
       shell.openExternal(`https://chain.so/tx/ZECTEST/${txid}`);
     } else {
-      shell.openExternal(`https://zcha.in/transactions/${txid}`);
+      shell.openExternal(`https://insight.zeroclassic.org/tx/${txid}`);
     }
   };
 
@@ -100,7 +100,7 @@ const TxModalInternal = ({ modalIsOpen, tx, closeModal, currencyName, zecPrice, 
           {type === 'sent' && (
             <div>
               <div className={[cstyles.sublight].join(' ')}>Fees</div>
-              <div>ZEC {Utils.maxPrecisionTrimmed(fees)}</div>
+              <div>ZERC {Utils.maxPrecisionTrimmed(fees)}</div>
             </div>
           )}
 

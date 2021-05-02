@@ -1,8 +1,8 @@
 {
-  "name": "zecwallet-lite",
-  "productName": "Zecwallet Lite",
+  "name": "zercwallet-lite",
+  "productName": "Zercwallet Lite",
   "version": "1.6.0",
-  "description": "Zecwallet Lite (Electron version)",
+  "description": "Zercwallet Lite (Electron version)",
   "scripts": {
     "build": "yarn neon && concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
@@ -54,7 +54,7 @@
     ]
   },
   "build": {
-    "productName": "Zecwallet Lite",
+    "productName": "Zercwallet Lite",
     "appId": "co.zecwallet.lite",
     "afterAllArtifactBuild": "./afterSignHook.js",
     "files": [
@@ -80,7 +80,7 @@
       ]
     },
     "win": {
-      "icon": "./resources/icon.ico",
+      "icon": "./resources/zerc_icon.ico",
       "target": [
         "zip",
         "msi"
@@ -94,7 +94,7 @@
       "target": [
         "dmg"
       ],
-      "icon": "./resources/icon.icns"
+      "icon": "./resources/zerc_icon.icns"
     },
     "deb": {
       "depends": [
@@ -105,25 +105,25 @@
         "libxtst6",
         "libnss3"
       ],
-      "artifactName": "Zecwallet_Lite_${version}_${arch}.deb"
+      "artifactName": "Zercwallet_Lite_${version}_${arch}.deb"
     },
     "linux": {
       "category": "Development",
-      "icon": "./resources/icon.icns",
+      "icon": "./resources/zerc_icon.icns",
       "target": [
         "deb",
         "AppImage"
       ],
       "desktop": {
-        "Name": "ZecWallet Lite",
-        "Comment": "Shielded Lightclient for Zcash",
+        "Name": "ZercWallet Lite",
+        "Comment": "Shielded Lightclient for ZeroClassic",
         "GenericName": "Wallet",
         "Type": "Application",
         "StartupNotify": true,
-        "StartupWMClass": "zecwalletlite",
+        "StartupWMClass": "zercwalletlite",
         "Categories": "Utility;",
         "MimeType": "x-scheme-handler/zcash;",
-        "Keywords": "zecwallet;"
+        "Keywords": "zercwallet;"
       }
     },
     "directories": {
